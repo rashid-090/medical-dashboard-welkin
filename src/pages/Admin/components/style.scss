@@ -1,0 +1,39 @@
+.appoint-status{
+    padding: 5px;
+    &.Completed{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.171);
+    }
+    &.Pending{
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.171);
+    }
+    &.completed{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.171);
+    }
+    &.pending{
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.171);
+    }
+}
+
+.specialities-active{
+    padding: 5px;
+    &.Active{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.171);
+    }
+    &.active{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.171);
+    }
+    &.Inactive{
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.171);
+    }
+    &.inactive{
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.171);
+    }
+}
