@@ -1,39 +1,70 @@
 .appoint-status{
     padding: 5px;
+    border-radius: 8px;
     &.Completed{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.171);
+        color: #71bd81;
+        font-weight: 500;
+
     }
     &.Pending{
-        color: goldenrod;
-        background-color: rgba(218, 165, 32, 0.171);
+        color: #f5a00e;
+        font-weight: 500;
+
     }
     &.completed{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.171);
+        color: #71bd81;
+        font-weight: 500;
+
     }
     &.pending{
-        color: goldenrod;
-        background-color: rgba(218, 165, 32, 0.171);
+        color: #f5a00e;
+        font-weight: 500;
+
     }
 }
 
 .specialities-active{
     padding: 5px;
+    border-radius: 8px;
     &.Active{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.171);
+        color: #71bd81;
+        font-weight: 500;
     }
     &.active{
-        color: green;
-        background-color: rgba(0, 128, 0, 0.171);
+        color: #71bd81;
+        font-weight: 500;
     }
     &.Inactive{
-        color: goldenrod;
-        background-color: rgba(218, 165, 32, 0.171);
+        color: #f5a00e;
+        font-weight: 500;
     }
     &.inactive{
-        color: goldenrod;
-        background-color: rgba(218, 165, 32, 0.171);
+        color: #f5a00e;
+        font-weight: 500;
     }
 }
+
+
+.cellStatus{
+    padding: 5px;
+    border-radius: 8px;
+    &.Completed{
+        color: #71bd81;
+        font-weight: 500;
+
+    }
+    &.Pending{
+        color: #f5a00e;
+        font-weight: 500;
+
+    }
+    &.completed{
+        color: #71bd81;
+        font-weight: 500;
+    }
+    &.pending{
+        color: #f5a00e;
+        font-weight: 500;
+    }
+}
+

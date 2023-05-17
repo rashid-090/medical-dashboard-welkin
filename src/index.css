@@ -36,10 +36,10 @@ a:visited {
   transition: all 0.5s ease;
 }
 .dash-body{
-  width: calc(100% - 256px);
-  margin-left: 256px;
+  width: calc(100% - 288px);
+  margin-left: 288px;
   transition: all 0.5s ease;
-  background: #e5e7eb;
+  background: #f3f4f6;
   min-height: 100vh;
   padding-top: 50px;
 }
@@ -74,8 +74,8 @@ a:visited {
   top: 70px;
   right: 20px;
   background-color: #fff;
-  padding: 10px 20px;
-  width: 200px;
+  padding: 20px 30px;
+  width: 250px;
 }
 
 .dropdown-menu::before{
@@ -100,6 +100,16 @@ a:visited {
   visibility: hidden;
   transform: translateY(-20px);
   transition: 500ms ease;
+}
+
+
+
+/*  */
+.ql-editors{
+  padding: 0;
+}
+.ql-editor{
+  min-height: 8rem;
 }
 
 

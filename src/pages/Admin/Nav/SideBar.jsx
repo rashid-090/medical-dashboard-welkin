@@ -15,21 +15,19 @@ import {RiDashboard3Line,RiUserSettingsLine} from 'react-icons/ri';
 import {TbMedicalCrossFilled,TbUsers} from 'react-icons/tb';
 import {Menu} from 'antd';
 
-
-
 function SideBar() {
   const navigate = useNavigate()
 
   return (
     <>
-    <nav className='h-screen xs:w-24 md:w-64 fixed overflow-y-hidden transition-all duration-200 ease-in z-50'>
-      <span className='flex gap-2 bg-white border border-b-gray-300  z-50 fixed xs:w-24 md:w-64 top-0 left-0 items-center h-20 justify-center'>
+    <nav className='h-screen xs:w-24 md:w-72 fixed overflow-y-hidden transition-all duration-200 ease-in z-50'>
+      <span className='flex gap-2 bg-white  z-50 fixed xs:w-24 md:w-72 top-0 left-0 items-center h-20 justify-center'>
         <TbMedicalCrossFilled className='text-3xl text-blue-500'/>
         <h1 className='font-semibold text-2xl xs:hidden md:block'>LOGO</h1>
       </span>
 
-      <div className='pt-24 pl-5  w-full h-full font-medium text-gray-500 overflow-y-scroll  side-menu'>
-          <Menu className='xs:text-xs md:text-sm'
+      <div className='pt-24 pl-5  w-full h-full font-normal text-gray-500 overflow-y-scroll  side-menu'>
+          <Menu mode='inline' className='xs:text-xs md:text-base'
           onClick={({key})=>{
             navigate(key)
           }} 
@@ -70,6 +68,10 @@ function SideBar() {
           ]}>
 
           </Menu>
+
+
+
+
       </div>
     </nav>
     </>

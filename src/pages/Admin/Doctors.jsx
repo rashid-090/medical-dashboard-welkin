@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar,SideBar} from './Nav';
-import {DoctorTableAll } from "./components";
+import {DoctorDataTable } from "./components";
 
 function Doctors() {
   return (
@@ -10,7 +10,7 @@ function Doctors() {
       <Navbar/>
       <div className="p-5">
           
-          <DoctorTableAll />
+          {/* <DoctorDataTable /> */}
         </div>
     </div>
     </>

@@ -3,9 +3,11 @@ import { PagenotFound } from "./pages";
 import {
   Dashboard,
   Appointment,
+  AppointmentEdit,
   Enquiry,
   Feedback,
   Specialities,
+  SpecialitiesNew,
   Doctors,
   HealthCheckUp,
   Application,
@@ -22,6 +24,8 @@ import {
   UserRole,
   Seo,
 } from "./pages/Admin";
+
+
 
 const Layout = () => {
   return (
@@ -62,6 +66,10 @@ const router = createBrowserRouter([
         element: < Appointment/>,
       },
       {
+        path: "/admin/appointment-edit/:id",
+        element: < AppointmentEdit/>,
+      },
+      {
         path: "/admin/enquiry",
         element: <Enquiry />,
       },
@@ -72,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/specialities",
         element: <Specialities />,
+      },
+      {
+        path: "/admin/specialities-new",
+        element: <SpecialitiesNew />,
       },
       {
         path: "/admin/doctors",

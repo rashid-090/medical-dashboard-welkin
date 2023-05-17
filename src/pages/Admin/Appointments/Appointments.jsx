@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar, SideBar } from "./Nav";
-import { AppointmentTableAll } from "./components";
+import { Navbar, SideBar } from "../../Admin/Nav";
+import { AppointmentDataTable } from "../components";
 
 
 function Appointments() {
@@ -11,7 +11,7 @@ function Appointments() {
         <Navbar />
         <div className="p-5">
           
-          <AppointmentTableAll />
+          <AppointmentDataTable />
         </div>
       </div>
     </>

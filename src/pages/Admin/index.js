@@ -1,8 +1,10 @@
 import Dashboard from "./Dashboard";
-import Appointment from './Appointments';
+import Appointment from './Appointments/Appointments';
+import AppointmentEdit from './Appointments/AppointmentEdit';
 import Enquiry from './Messages/Enquiry';
 import Feedback from './Messages/Feedback';
-import Specialities from './Specialities';
+import Specialities from './Specialities/Specialities';
+import SpecialitiesNew from "./Specialities/CreateSpecialities";
 import Doctors from './Doctors';
 import HealthCheckUp from './Health';
 import Application from './Careers/Applications';
@@ -23,9 +25,11 @@ import Seo from "./Settings/Seo";
 export{
     Dashboard,
     Appointment,
+    AppointmentEdit,
     Enquiry,
     Feedback,
     Specialities,
+    SpecialitiesNew,
     Doctors,
     HealthCheckUp,
     Application,

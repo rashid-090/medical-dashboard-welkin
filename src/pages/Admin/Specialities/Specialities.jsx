@@ -1,6 +1,6 @@
 import React from 'react'
-import {Navbar,SideBar} from './Nav';
-import {SpecialitiesTableAll } from "./components";
+import {Navbar,SideBar} from '../Nav';
+import {SpecialitiesDataTable } from "../components";
 
 function Specialities() {
   return (
@@ -10,7 +10,7 @@ function Specialities() {
       <Navbar/>
       <div className="p-5">
           
-          <SpecialitiesTableAll />
+          <SpecialitiesDataTable />
         </div>
     </div>
     </>

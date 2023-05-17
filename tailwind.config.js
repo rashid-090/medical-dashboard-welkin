@@ -16,8 +16,13 @@ module.exports = {
    extend: {
      colors:{
        'primary': '#3b82f6',
+       'primaryhover': '#3b83f6e8',
 
      },
+     borderRadius:{
+      'radiusmd':'8px',
+      'radiusbtn':'6px'
+     }
 
    },
   

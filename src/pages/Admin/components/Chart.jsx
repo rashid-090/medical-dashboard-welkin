@@ -1,39 +1,42 @@
 import React from 'react';
 import './style.scss'
-import { AreaChart,LineChart,Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
-    { name: 'May', uv: 1000 },
-    { name: 'June', uv: 2000 },
-    { name: 'July', uv: 1000 },
-    { name: 'Agust', uv: 3000  },
-    { name: 'September', uv: 1890 },
-    { name: 'October', uv: 2390 },
-    { name: 'November', uv: 1490 },
+    { name: 'May',pv:1000, uv: 1000 },
+    { name: 'June',pv:3000, uv: 2000 },
+    { name: 'July',pv:1000, uv: 1000 },
+    { name: 'Agust',pv:2000, uv: 3000  },
+    { name: 'September',pv:4000, uv: 1890 },
+    { name: 'October',pv:1000, uv: 2390 },
+    { name: 'November',pv:2000, uv: 1490 },
   ];
 
 
 function Chart() {
   return (
    <>
-  <div className='h-60 z-[0]'>
+   
+  <div className='h-96 z-[0] bg-white rounded-md'>
   <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}
-          height={400}
+          height={300}
           data={data}
           margin={{
-            top: 10,
-            right: 20,
+            top: 5,
+            right: 30,
             left: 20,
-            bottom: 0,
+            bottom: 5,
           }}
         >
-      
+   
           <XAxis dataKey="name" />
           {/* <YAxis /> */}
           <Tooltip />
-          <Line type="monotone" dataKey="uv" stroke="#8884d8" fill="#3287ff6e" />
+          {/* <Legend /> */}
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d"  />
         </LineChart>
       </ResponsiveContainer>
   </div>
